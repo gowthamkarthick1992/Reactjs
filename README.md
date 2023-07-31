@@ -1,6 +1,4 @@
-# Reactjs
 
-ReactJS is an open-source front-end JavaScript library for building user interfaces.
 
  const name='I am trying to develope React function'
 
