@@ -1,4 +1,6 @@
-<p align="center"> 
+
+
+<div dir='rtl'">
  const name='I am trying to develope React function'
 
 function print () 
@@ -15,6 +17,6 @@ console.log(name)
 
 console.log(name)
 print() 
-</p>
+</div>
 
 
