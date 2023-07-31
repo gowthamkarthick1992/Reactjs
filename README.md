@@ -1,6 +1,6 @@
 
 
-<div dir='rtl'">
+<div dir='rtl'>
  const name='I am trying to develope React function'
 
 function print () 
