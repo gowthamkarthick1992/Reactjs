@@ -1,1 +1,16 @@
-\\Desktop-8fm48us\e\SOFTWARE\SoftwaresDevelopment\OptrimWeb\Sep2022_v5_32bit_DSPM_Version_Working
+ const name='I am trying to develope React function'
+
+function print () 
+{
+const name='it is called from function scope'
+console.log(name)
+
+if (true)
+{
+const name='it is called from block scope'
+console.log(name)
+}
+}
+
+console.log(name)
+print() 
