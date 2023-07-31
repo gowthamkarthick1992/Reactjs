@@ -1,4 +1,4 @@
-<p align="right"> 
+<p align="center"> 
  const name='I am trying to develope React function'
 
 function print () 
