@@ -1,7 +1,6 @@
-<pre>
+<code>
 
-
- const name='I am trying to develope React function'
+const name='I am trying to develope React function'
 
 function print () 
 {
@@ -18,5 +17,5 @@ console.log(name)
 console.log(name)
 print() 
 
-</pre>
+</code>
 
