@@ -1,4 +1,6 @@
- const name='I am trying to develope React function'
+//ww
+
+const name='I am trying to develope React function'
 
 function print () 
 {
