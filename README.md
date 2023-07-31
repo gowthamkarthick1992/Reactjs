@@ -1,5 +1,4 @@
-
-
+<p align="right"> 
  const name='I am trying to develope React function'
 
 function print () 
@@ -16,3 +15,6 @@ console.log(name)
 
 console.log(name)
 print() 
+</p>
+
+
