@@ -1,4 +1,4 @@
-
+<pre>
 
 
  const name='I am trying to develope React function'
@@ -18,5 +18,5 @@ console.log(name)
 console.log(name)
 print() 
 
-
+</pre>pre>
 
