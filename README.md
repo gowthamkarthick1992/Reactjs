@@ -18,5 +18,5 @@ console.log(name)
 console.log(name)
 print() 
 
-</pre>pre>
+</pre>
 
