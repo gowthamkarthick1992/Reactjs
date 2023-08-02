@@ -1,0 +1,114 @@
+#ES 6 Concept :
+
+ES6 is standard javascript.
+
+Concept list :
+1.Classes
+2.Arrow Functions
+3.Variables (let, const, var)
+4.Array Methods like .map()
+5.Destructuring
+6.Modules
+7.Ternary Operator
+8.Spread Operator.
+
+1.Classes:
+    Class is type a function.Using class keyword to intiate the class.Class properties declare inside of the
+	constructor of the class.
+	
+Ex:
+class Car {
+  constructor(name) {
+    this.brand = name;
+  }
+}	
+
+Create object myobj to access or call the class with pass the parameter.
+
+class Car {
+  constructor(name) {
+    this.brand = name;
+    console.log(  this.brand);
+  }
+}
+
+const mycar = new Car("Ford");
+
+Method in class:
+	We can create our own method inside the class.
+	
+Ex:
+class Car {
+  constructor(name) {
+    this.brand = name;   
+  }
+  
+  MyMethod()
+  {
+   return 'my brand is '+this.brand;
+  }  
+}
+	
+const mycar = new Car("Ford");
+console.log(mycar.MyMethod());
+
+Class inheritance:
+   we can use main class methods using extend keyword from inheritance of the class(another class)
+   
+ Ex:
+
+class Car 
+{
+  constructor(name) {
+    this.brand = name;   
+  }
+  Brand()
+  {
+   return 'my brand is '+this.brand;
+  }  
+}
+
+class Model extends Car {
+
+constructor(name,mod)
+{
+super(name);
+this.model=mod;
+}
+
+show()
+{
+return this.Brand() +' and Model is '+ this.model;
+}
+
+}
+
+const obj = new Model("Ford","mustang");
+console.log(obj.show());
+
+Note:
+The super() method refers to the parent class.
+calling the super() method in the constructor method, we call the parent's constructor method and 
+get access the parent class properties, methods.
+
+2.Arrow Functions:
+
+Before Arrow function:
+Example:
+hello = function() {
+  return "Hello World!";
+}
+console.log(hello());
+
+After Arrow function:
+Example:
+hello = ()=> {
+  return "Hello World!";
+}
+console.log(hello());
+
+Again shorter the function then remove the brackets
+
+ex:
+hello = () => "Hello World!";
+console.log(hello());
