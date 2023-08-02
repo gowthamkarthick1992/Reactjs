@@ -1,0 +1,188 @@
+
+
+
+
+
+array function list
+1.length
+2.toString()
+3.pop()
+4.push()
+5.shift()
+6.unshift()
+7.join()
+8.delete()
+9.concat()
+10.flat()
+11.splice()
+12.slice()
+
+1.length :
+
+It is return length of the array values.
+
+Ex :
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let size = fruits.length;
+console.log(size);
+
+Output : 4
+
+2.toString() :
+
+Convert array to string with comma seperated values.
+
+ex:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits.toString());
+
+Output : Banana,Orange,Apple,Mango
+
+3.join() :
+ this method also join the array elements into the string.Extra,can add the separater in the string.
+ 
+Ex:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const test = fruits.join(" * ");
+console.log(test);
+
+Output:
+Banana * Orange * Apple * Mango
+
+4.Poping and Pushing:
+
+poping the array items out of the array,pushing new items into array.
+
+i)Poping(): Removes the last element of the array.
+
+Ex :
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.pop();
+console.log(fruits)
+
+Output:[ 'Banana', 'Orange', 'Apple' ]
+
+ii)Pusing(): Add new element of the array at the end.
+
+ex:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi");
+console.log(fruits)
+
+Output:["Banana", "Orange", "Apple", "Mango" ,"Kiwi"]
+
+5.Shift():
+Shifting same like poping ,but remove first element instead of last one.
+And move all other elements into lower index.
+
+Ex:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift();
+console.log(fruits)
+
+Output:[ 'Orange', 'Apple', 'Mango' ]
+
+6.Unshift():
+Add new elements into the first element of the array.And unsift the all element to the next indexes.
+
+Ex:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.unshift("Lemon");
+console.log(fruits)
+
+Output:[ 'Lemon', 'Banana', 'Orange', 'Apple', 'Mango' ]
+
+7.Changing elements:
+ Array elements accessed through index number.
+ We can replace the array element using the index number.
+ 
+Ex:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[0] = "Kiwi";
+console.log(fruits)
+
+Output:[ 'Kiwi', 'Orange', 'Apple', 'Mango' ]
+
+8.Array Length:
+     length properly helps to append the new element to the array.
+
+Ex:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[fruits.length] = "Kiwi";
+console.log(fruits)
+
+Output:[ 'Banana', 'Orange', 'Apple', 'Mango', 'Kiwi' ]
+
+9.Array delete:
+   delete the array element using delete operator.
+
+Ex:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits[0])
+delete fruits[0];
+console.log(fruits)
+   
+Output:
+Banana
+[ <1 empty item>, 'Orange', 'Apple', 'Mango' ]
+
+10.Merging (Concatenating) Arrays:
+concat() method create a new array by merging(concatenate) existing array.
+
+Ex:
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+const myChildren = myGirls.concat(myBoys);
+console.log(myChildren)
+
+Output:[ 'Cecilie', 'Lone', 'Emil', 'Tobias', 'Linus' ]
+
+Ex: (Merging Three Arrays)
+const arr1 = ["Cecilie", "Lone"];
+const arr2 = ["Emil", "Tobias", "Linus"];
+const arr3 = ["Robin", "Morgan"];
+const myChildren = arr1.concat(arr2, arr3);
+console.log(myChildren)
+
+Output:['Cecilie','Lone','Emil','Tobias','Linus','Robin','Morgan']
+
+Ex: (Merging an Array with Values)
+const arr1 = ["Emil", "Tobias", "Linus"];
+const myChildren = arr1.concat("Peter"); 
+console.log(myChildren)
+
+Output:
+[ 'Emil', 'Tobias', 'Linus', 'Peter' ]
+
+11.Flat()
+flattering an array is the process of reducing the dimensionality of array.
+
+Ex:
+const myArr = [[1,2],[3,4],[5,6]];
+const newArr = myArr.flat();
+console.log(newArr)
+
+Output:[ 1, 2, 3, 4, 5, 6 ]
+
+12.Splicing and Slicing Arrays:
+The splice() method adds new items to an array.
+The slice() method slices out a piece of an array.
+
+splice()
+ex:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 0, "Lemon", "Kiwi");
+console.log(fruits)
+
+Output:[ 'Banana', 'Orange', 'Lemon', 'Kiwi', 'Apple', 'Mango' ]
+
+
+slice() :
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(1);
+console.log(citrus);
+
+output:[ 'Orange', 'Lemon', 'Apple', 'Mango' ]
+
+
+
