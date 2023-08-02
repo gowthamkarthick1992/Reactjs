@@ -1,0 +1,72 @@
+Sorting an Array :
+ sort() method sort the array albhabetically.
+ 
+ Ex:
+ const fruits = ["Banana", "Orange", "Apple", "Mango"];
+ fruits.sort();
+ console.log(fruits);
+ 
+ Output :
+ [ 'Apple', 'Banana', 'Mango', 'Orange' ]
+ 
+Revesing an Array :
+ Reverse() method reversing elements in desending orders with using along with sort() method.
+ 
+ Ex:
+	const fruits = ["Banana", "Orange", "Apple", "Mango"];
+	//sort in asednign
+	fruits.sort();
+	// Then reverse it become descending order:
+	fruits.reverse();
+	console.log(fruits);
+	
+    Output:[ 'Orange', 'Mango', 'Banana', 'Apple' ]
+ 
+    Numeric sort:
+    Default sort() method sorting array elements as a string.
+	So sort the string Banana comes after Apple.
+	But numbers of 20,100 - 20 bigger than 100.Because 2 bigger than 1.
+	So,sort() works wrongly in number sorting.
+	We can use compare function for number sorting.
+	
+	Ex:
+	const points=[3, 4, 2, 1, 5];
+	points.sort(function(a,b){return a-b});
+	console.log(points);
+	
+	Output: [1, 2, 3, 4, 5]
+	
+	Desending: can sort same way to descending the number array.
+	
+	Ex:
+	const points=[3, 4, 2, 1, 5];
+	points.sort(function(a,b){return b-a});
+	console.log(points);
+	
+	Output: [5 ,4, 3, 2, 1]
+	
+	Find max num in array:
+	   to find the highest number in an array:
+	 
+	Ex:	 
+	const points=[5,8,55,85,20]	
+	function findMaxArray(arr)
+	{
+	  return Math.max.apply(null, arr);
+	}	   
+	console.log(findMaxArray(points));
+	
+	Output: 85
+	
+	min also same like :
+	const points=[5,8,55,85,20]	
+	function findMaxArray(arr)
+	{
+	  return Math.min.apply(null, arr);
+	}	   
+	console.log(findMaxArray(points));
+	
+	Output: 5
+ 
+ 
+ 
