@@ -1,5 +1,6 @@
-#ES 6 Concept :
+React Js :
 
+ES6 Concept :
 ES6 is standard javascript.
 
 Concept list :
@@ -112,3 +113,29 @@ Again shorter the function then remove the brackets
 ex:
 hello = () => "Hello World!";
 console.log(hello());
+
+Arrow function With Parameters:
+
+hello = (val) => "Hello " + val;
+console.log(hello("test"));
+
+if we have only one parameter remove parantheses.
+
+hello = val => "Hello " + val;
+console.log(hello("test"));
+
+Variables:
+
+Three way of defind the variables : var,let and const.
+
+if use "var" outside the function,it belongs global scope.
+if use "var" inside the function,it belongs to that function scope.
+if use "var" inside the block .ie., a for loop it also can use outside the block.
+
+let : let is block scope version.
+let define inside block,only can use inside of the block(loop block)
+
+const :
+It that value can created,that value will not change.
+
+
