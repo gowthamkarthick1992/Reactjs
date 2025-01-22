@@ -1,0 +1,134 @@
+In React, components are the building blocks of the UI. They encapsulate logic and UI elements, making them reusable and maintainable.
+React supports two main types of components: Functional Components and Class Components.
+
+1. Functional Components
+Definition
+Functional components are simple JavaScript functions that return JSX to render UI. They can manage state and lifecycle events using React hooks.
+
+Syntax
+jsx
+Copy
+Edit
+function Greeting(props) {
+  return <h1>Hello, {props.name}!</h1>;
+}
+Or using an arrow function:
+
+jsx
+Copy
+Edit
+const Greeting = (props) => <h1>Hello, {props.name}!</h1>;
+Key Features
+Stateless (Prior to Hooks): Initially, functional components could not manage state or lifecycle events.
+Stateful (With Hooks): Now, functional components can use useState, useEffect, and other hooks to manage state and lifecycle events.
+Lightweight and easier to read/test compared to class components.
+Example: Stateful Functional Component
+jsx
+Copy
+Edit
+import React, { useState } from "react";
+
+const Counter = () => {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
+};
+2. Class Components
+Definition
+Class components are ES6 classes that extend React.Component. They have a render() method that returns JSX.
+
+Syntax
+jsx
+Copy
+Edit
+class Greeting extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}!</h1>;
+  }
+}
+Key Features
+Stateful: Can hold local state using this.state.
+Lifecycle Methods: Support methods like componentDidMount, shouldComponentUpdate, etc., for managing component lifecycle.
+Require more boilerplate than functional components.
+Example: Stateful Class Component
+jsx
+Copy
+Edit
+import React from "react";
+
+class Counter extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 };
+  }
+
+  increment = () => {
+    this.setState({ count: this.state.count + 1 });
+  };
+
+  render() {
+    return (
+      <div>
+        <p>Count: {this.state.count}</p>
+        <button onClick={this.increment}>Increment</button>
+      </div>
+    );
+  }
+}
+Key Differences
+Feature	Functional Components	Class Components
+Syntax	Function	ES6 Class
+State Management	useState Hook (Modern)	this.state (Traditional)
+Lifecycle Methods	Hooks (e.g., useEffect)	Class lifecycle methods
+Boilerplate	Minimal	More verbose
+Performance	Slightly faster	Slightly slower
+Recommended?	✅ Modern standard	❌ Less common today
+Lifecycle Management
+Functional Components (With Hooks)
+Hooks like useEffect manage lifecycle behaviors:
+
+jsx
+Copy
+Edit
+import React, { useEffect } from "react";
+
+const Timer = () => {
+  useEffect(() => {
+    console.log("Component mounted");
+    return () => console.log("Component unmounted"); // Cleanup
+  }, []);
+
+  return <p>Timer running...</p>;
+};
+Class Components
+Lifecycle methods manage component behaviors:
+
+jsx
+Copy
+Edit
+class Timer extends React.Component {
+  componentDidMount() {
+    console.log("Component mounted");
+  }
+
+  componentWillUnmount() {
+    console.log("Component unmounted");
+  }
+
+  render() {
+    return <p>Timer running...</p>;
+  }
+}
+Which Should You Use?
+Functional Components:
+Preferred for most modern React applications.
+Simpler syntax and support for hooks.
+Class Components:
+Still valid but less commonly used in new codebases.
+Useful if you're working with legacy code.
+Would you like examples of converting class components to functional ones or learning more about React hooks?
